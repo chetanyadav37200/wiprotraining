@@ -1,0 +1,41 @@
+'''Do the following in sequence and record the results in a single program
+Create a tuple with the names of 3 different cities you’d like to visit. Print the tuple.:
+Access and print the first and last elements of the tuple.:
+Create another tuple with 2 more cities. Concatenate both tuples and print the result.
+Try changing one element of the tuple. What happens?
+Unpack the elements of the tuple into separate variables and print them'''
+
+#code
+
+cities = ('Mumbai','Manali','Goa')
+print("Orginal :",cities)
+print("First City :",cities[0])
+print('Last City',cities[len(cities)-1])
+cities_more=('Greater Noida','Udaipur')
+all_cities=cities+cities_more
+print('Concatenated :',all_cities)
+
+try:
+    cities[0]='pune'
+except TypeError as e:
+    print("Error :",e)
+a,b,c=cities
+print('unpacked value:')
+print(a)
+print(b)
+print(c)
+
+
+#output
+'''"C:\Wipro Training\python\pythoncoding\.venv\Scripts\python.exe" "C:\Wipro Training\python\pythoncoding\daily_assiment\day2\2.py"
+Orginal : ('Mumbai', 'Manali', 'Goa')
+First City : Mumbai
+Last City Goa
+Concatenated : ('Mumbai', 'Manali', 'Goa', 'Greater Noida', 'Udaipur')
+Error : 'tuple' object does not support item assignment
+unpacked value:
+Mumbai
+Manali
+Goa
+
+Process finished with exit code 0'''

@@ -1,0 +1,16 @@
+'''2. Write a program that takes a year as input and checks if it is a leap year or not. 
+Print the result. '''
+
+#Code
+
+year = int(input("Enter a year"))
+if (year%4==0 and year % 100 != 0) or (year%400 == 0):
+    print(year," is a leap year")
+else:
+    print(year,"is not a leap year")
+
+'''"C:\Wipro Training\python\pythoncoding\.venv\Scripts\python.exe" "C:\Wipro Training\python\pythoncoding\daily_assiment\day1\2.py" 
+Enter a year2020
+2020  is a leap year
+
+Process finished with exit code 0'''

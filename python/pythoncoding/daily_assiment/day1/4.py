@@ -1,0 +1,23 @@
+'''4 Write a program that takes a character as input and checks if it is a vowel or 
+consonant. Print the result. '''
+# code
+
+s1 = input("Enter a alphabate ")
+vowel = ['a', 'u', 'e', 'i', 'o']
+s1.lower()
+is_vowel = False
+for c in vowel:
+    if (c == s1):
+        is_vowel = True
+if (is_vowel):
+    print(s1, " is vowel")
+else:
+    print(s1, " is not vowel")
+
+'''
+Output
+"C:\Wipro Training\python\pythoncoding\.venv\Scripts\python.exe" "C:\Wipro Training\python\pythoncoding\daily_assiment\day1\4.py" 
+Enter a alphabateu
+u  is vowel
+
+Process finished with exit code 0'''

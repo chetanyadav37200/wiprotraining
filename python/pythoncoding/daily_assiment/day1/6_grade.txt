@@ -1,0 +1,29 @@
+'''6. Write a program that takes a grade (A, B, C, D, F) as input and uses match-case
+to print a message corresponding to the grade (e.g., "Excellent" for A, "Good" for
+B, etc.).'''
+
+#Code
+
+grade = input("Enter a grade in A B C D E F :")
+if(grade=='A'):
+    print('Excellent')
+elif(grade=='B'):
+    print('Good')
+elif(grade=='C'):
+    print('Average')
+elif(grade=='D'):
+    print('Below Average')
+elif(grade=='E'):
+    print('Poor')
+elif(grade=='F'):
+    print('Fail')
+else:
+    print('Invalid Input')
+
+'''output
+"C:\Wipro Training\python\pythoncoding\.venv\Scripts\python.exe" "C:\Wipro Training\python\pythoncoding\daily_assiment\day1\6.py"
+Enter a grade in A B C D E F :C
+Average
+
+Process finished with exit code 0
+'''

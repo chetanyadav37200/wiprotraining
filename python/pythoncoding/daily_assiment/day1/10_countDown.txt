@@ -1,0 +1,24 @@
+'''10. Write a program that uses a while loop to create a countdown timer from 10 to 0.
+Print each number. '''
+
+#code
+num=10
+while(num>=0):
+    print(num)
+    num-=1
+
+#output
+'''"C:\Wipro Training\python\pythoncoding\.venv\Scripts\python.exe" "C:\Wipro Training\python\pythoncoding\daily_assiment\day1\10.py"
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+
+Process finished with exit code 0'''

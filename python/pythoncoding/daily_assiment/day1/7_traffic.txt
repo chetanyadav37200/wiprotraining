@@ -1,0 +1,16 @@
+'''7 Write a program that takes a traffic light color (Red, Yellow, Green) as input and
+uses match-case to print the corresponding action (e.g., "Stop" for Red, "Wait"
+for Yellow, etc.).'''
+
+#code
+color=input("Enter color trafic light Red Yellow Green")
+trafic={'Red':'Stop','Yelloe':'Wait','Green':'Go'}
+print(trafic[color])
+
+'''#Output
+"C:\Wipro Training\python\pythoncoding\.venv\Scripts\python.exe" "C:\Wipro Training\python\pythoncoding\daily_assiment\day1\7.py"
+Enter color trafic light Red Yellow GreenRed
+Stop
+
+Process finished with exit code 0
+'''

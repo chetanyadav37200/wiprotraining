@@ -1,0 +1,42 @@
+'''Do the following in sequence and record the results in a single program
+Create a dictionary with your name, age, and favorite hobby as keys, and provide
+appropriate values. Print the dictionary.
+Access and print the value associated with your name in the dictionary.
+Add a new key-value pair for your favorite food, then update the value for your favorite
+hobby. Print the updated dictionary.
+Print all the keys and all the values in the dictionary separately.
+Remove the age key-value pair from the dictionary. Print the dictionary to see the
+change.'''
+
+
+
+#code
+
+
+details={'Name':'Chetan','Age':'23','Hobby':'Chess'}
+print(f"Dictionary : {details}")
+
+print(f"Name :{details['Name']}")
+
+details['fav_food']='Poha'
+details['Hobby']='Gym'
+print(f"Updated dictionary :{details}")
+
+print(f"Keys of dictionary :{details.keys()}")
+print(f"Values of dictionary :{details.values()}")
+
+del details['Age']
+print(f"New Details :{details}")
+
+
+#Output
+
+'''"C:\Wipro Training\python\pythoncoding\.venv\Scripts\python.exe" "C:\Wipro Training\python\pythoncoding\daily_assiment\day2\4.py"
+Dictionary : {'Name': 'Chetan', 'Age': '23', 'Hobby': 'Chess'}
+Name :Chetan
+Updated dictionary :{'Name': 'Chetan', 'Age': '23', 'Hobby': 'Gym', 'fav_food': 'Poha'}
+Keys of dictionary :dict_keys(['Name', 'Age', 'Hobby', 'fav_food'])
+Values of dictionary :dict_values(['Chetan', '23', 'Gym', 'Poha'])
+New Details :{'Name': 'Chetan', 'Hobby': 'Gym', 'fav_food': 'Poha'}
+
+Process finished with exit code 0'''

@@ -1,0 +1,34 @@
+'''Do the following in sequence and record the results in a single program
+Create a list with 5 different types of fruits. Print the list.
+Add two more fruits to the list, then remove one fruit from it. Print the updated list.
+Access the second and fourth fruits in the list. Print them.
+Slice the list to get the first three fruits and print the result.
+Find and print the length of your list.'''
+
+#Code
+
+fruits=['apple','banana','papaya','orange','graphs']
+print(fruits)
+
+fruits.append('kiwi')
+fruits.append('Mango')
+fruits.remove('orange')
+print(fruits)
+
+print(fruits[1],',',fruits[3])
+
+print(fruits[:3])
+
+lengthOfList=len(fruits)
+print(lengthOfList)
+
+#output
+'''
+"C:\Wipro Training\python\pythoncoding\.venv\Scripts\python.exe" "C:\Wipro Training\python\pythoncoding\daily_assiment\day2\1.py" 
+['apple', 'banana', 'papaya', 'orange', 'graphs']
+['apple', 'banana', 'papaya', 'graphs', 'kiwi', 'Mango']
+banana , graphs
+['apple', 'banana', 'papaya']
+6
+
+Process finished with exit code 0'''

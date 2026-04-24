@@ -1,0 +1,24 @@
+'''11. Write a program that uses a for loop to count the number of vowels in a given
+string. Print the count. '''
+
+#code
+def check_vowel(c):
+    vowel=['a','e','i','o','u']
+    for val in vowel:
+        if(c==val):
+            return True
+    return False
+#main
+s1=input("Enter String")
+count=0
+for c in s1:
+    if(check_vowel(c)):
+        count+=1
+print(count)
+
+#output
+'''"C:\Wipro Training\python\pythoncoding\.venv\Scripts\python.exe" "C:\Wipro Training\python\pythoncoding\daily_assiment\day1\11.py"
+Enter Stringchetan
+2
+
+Process finished with exit code 0'''

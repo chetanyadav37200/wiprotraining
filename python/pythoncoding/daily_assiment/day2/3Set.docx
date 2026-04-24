@@ -1,0 +1,43 @@
+'''Do the following in sequence and record the results in a single program
+Create a set of 5 unique colors. Print the set.
+Add a new color to the set, then try removing an existing color. Print the updated set.
+Create another set with 3 different colors. Find the intersection, union, and difference
+between both sets.
+Check if a specific color is in the set and print the result.
+Convert a list of fruits (with some duplicates) into a set and print the unique fruits. '''
+
+#code
+
+color={'Red','Black','Brown','White','Green'}
+print('Orginal set: ',color)
+
+color.add('Blue')
+color.remove('Red')
+print('Updated Set',color)
+
+color2={'Red','Pink','Gray','Black'}
+print('Union :',color.union(color2))
+print('Inertion :',color.intersection(color2))
+print('Difference :',color.difference(color2))
+
+check_color='yellow'
+print(f"Is {check_color} in set?{check_color in color}")
+
+fruits=['apple','banana','apple','Kiwi']
+uniq_fruits=set(fruits)
+print(f"unique fruits{uniq_fruits}")
+
+
+
+
+#output
+'''"C:\Wipro Training\python\pythoncoding\.venv\Scripts\python.exe" "C:\Wipro Training\python\pythoncoding\daily_assiment\day2\3.py"
+Orginal set:  {'White', 'Black', 'Brown', 'Green', 'Red'}
+Updated Set {'White', 'Black', 'Brown', 'Blue', 'Green'}
+Union : {'Blue', 'Red', 'Gray', 'White', 'Black', 'Brown', 'Pink', 'Green'}
+Inertion : {'Black'}
+Difference : {'Green', 'White', 'Brown', 'Blue'}
+Is yellow in set?False
+unique fruits{'Kiwi', 'apple', 'banana'}
+
+Process finished with exit code 0'''
