@@ -28,4 +28,4 @@ class TestCalculation(unittest.TestCase):
     @unittest.skipIf(sys.version_info[:2] < (3, 13), reason="not impl yet")
     def test_ne(self):
         res = ne(10, 10)
-        self.assertFalse(res, msg="10 should equal 10")
+        self.assertFalse(res, m===sg="10 should equal 10")
