@@ -1,0 +1,38 @@
+import pytest
+from pages.loginpage import LoginPage
+from utils.csv_reader import CSVReader
+from utils.logger import LogGen
+
+logger =LogGen.loggen()
+
+@pytest.mark.order(1)
+@pytest.mark.parametrize(
+    "data",
+    CSVReader.read_csv("login_data.csv")
+)
+def test_login(driver, data):
+    logger.info(f'Login Page opened')
+    login_page = LoginPage(driver)
+    logger.info(f'Trying to ligin with data : {data["username"]}, {data["password"]}')
+    login_page.login(data["username"], data["password"])
+    logger.info(f"checking logged in status")
+    if data["expected_result"] == "success":
+        # Successful login should go to inventory page
+        assert "inventory" in driver.current_url
+        logger.info(f"login sussfully invemtory page opened")
+    else:
+        # Failed login should NOT go to inventory page
+        assert "inventory" not in driver.current_url
+        logger.error(f"log in failed inventory page not loaded")
+
+        # Read actual error message
+        error_message = login_page.read_error_message()
+
+        # Expected failure messages based on type of failure
+        expected_errors = [
+            "do not match",       # wrong username/password
+            "locked out"          # locked out user
+        ]
+
+        # Assert that error_message contains at least one expected failure
+        assert any(e in error_message for e in expected_errors), f"Unexpected error message: {error_message}"
