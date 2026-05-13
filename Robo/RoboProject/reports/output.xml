@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.4 on win32)" generated="2026-05-11T16:15:31.025336" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Wipro Training\Robo\RoboProject\tests">
+<suite id="s1-s1" name="Signup" source="C:\Wipro Training\Robo\RoboProject\tests\signup.robot">
+<test id="s1-s1-t1" name="Verify User Can Signup Successfully" line="5">
+<kw name="Launch Demoblaze Application" owner="SignupPage">
+<msg time="2026-05-11T16:15:31.295781" level="INFO">Opening browser 'edge' to base url 'https://www.demoblaze.com'.</msg>
+<msg time="2026-05-11T16:15:34.801857" level="INFO">Opening browser and launching demoblaze application</msg>
+<status status="PASS" start="2026-05-11T16:15:31.295593" elapsed="3.574037"/>
+</kw>
+<kw name="Click Signup Link" owner="SignupPage">
+<msg time="2026-05-11T16:15:34.871241" level="INFO">clicking signup link</msg>
+<msg time="2026-05-11T16:15:34.871322" level="INFO">Clicking element 'id=signin2'.</msg>
+<status status="PASS" start="2026-05-11T16:15:34.870904" elapsed="0.156449"/>
+</kw>
+<kw name="Enter Username" owner="SignupPage">
+<msg time="2026-05-11T16:15:35.028227" level="INFO">Entering username</msg>
+<msg time="2026-05-11T16:15:35.028300" level="INFO">Typing text 'username15387' into text field 'id=sign-username'.</msg>
+<status status="PASS" start="2026-05-11T16:15:35.027940" elapsed="0.379987"/>
+</kw>
+<kw name="Enter Password" owner="SignupPage">
+<msg time="2026-05-11T16:15:35.408683" level="INFO">entering password</msg>
+<msg time="2026-05-11T16:15:35.408757" level="INFO">Typing text 'pwdpwdpwd' into text field 'id=sign-password'.</msg>
+<status status="PASS" start="2026-05-11T16:15:35.408447" elapsed="0.199650"/>
+</kw>
+<kw name="Click Register Button" owner="SignupPage">
+<msg time="2026-05-11T16:15:35.608917" level="INFO">Clicking singup button</msg>
+<msg time="2026-05-11T16:15:35.608988" level="INFO">Clicking button '//button[text()='Sign up']'.</msg>
+<status status="PASS" start="2026-05-11T16:15:35.608670" elapsed="0.108049"/>
+</kw>
+<kw name="Verify Signup Success Alert" owner="SignupPage">
+<msg time="2026-05-11T16:15:35.717269" level="INFO">Verfy sussccfull</msg>
+<msg time="2026-05-11T16:15:36.736285" level="INFO">Sign up successful.</msg>
+<msg time="2026-05-11T16:15:36.736536" level="FAIL">UnexpectedAlertPresentException: Alert Text: Sign up successful.
+Message: unexpected alert open: {Alert text : Sign up successful.}
+  (Session info: MicrosoftEdge=148.0.3967.54)
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff790580f15+e235]
+	msedgedriver!GetHandleVerifier [0x7ff790580f74+e294]
+	msedgedriver!GetHandleVerifier [0x7ff7908fa65a+38797a]
+	msedgedriver!(No symbol) [0x7ff79032f5eb]
+	msedgedriver!(No symbol) [0x7ff7902ea30c]
+	msedgedriver!(No symbol) [0x7ff7902e9566]
+	msedgedriver!(No symbol) [0x7ff7902ea133]
+	msedgedriver!(No symbol) [0x7ff7903b3e49]
+	msedgedriver!(No symbol) [0x7ff7903b0413]
+	msedgedriver!(No symbol) [0x7ff7903c0672]
+	msedgedriver!GetHandleVerifier [0x7ff79059d498+2a7b8]
+	msedgedriver!GetHandleVerifier [0x7ff7905a5e86+331a6]
+	msedgedriver!GetHandleVerifier [0x7ff790588274+15594]
+	msedgedriver!GetHandleVerifier [0x7ff790588395+156b5]
+	msedgedriver!GetHandleVerifier [0x7ff7905756a3+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffe18eee8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffe19e4c3fc+2c]
+</msg>
+<status status="FAIL" start="2026-05-11T16:15:35.717082" elapsed="1.022757">UnexpectedAlertPresentException: Alert Text: Sign up successful.
+Message: unexpected alert open: {Alert text : Sign up successful.}
+  (Session info: MicrosoftEdge=148.0.3967.54)
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff790580f15+e235]
+	msedgedriver!GetHandleVerifier [0x7ff790580f74+e294]
+	msedgedriver!GetHandleVerifier [0x7ff7908fa65a+38797a]
+	msedgedriver!(No symbol) [0x7ff79032f5eb]
+	msedgedriver!(No symbol) [0x7ff7902ea30c]
+	msedgedriver!(No symbol) [0x7ff7902e9566]
+	msedgedriver!(No symbol) [0x7ff7902ea133]
+	msedgedriver!(No symbol) [0x7ff7903b3e49]
+	msedgedriver!(No symbol) [0x7ff7903b0413]
+	msedgedriver!(No symbol) [0x7ff7903c0672]
+	msedgedriver!GetHandleVerifier [0x7ff79059d498+2a7b8]
+	msedgedriver!GetHandleVerifier [0x7ff7905a5e86+331a6]
+	msedgedriver!GetHandleVerifier [0x7ff790588274+15594]
+	msedgedriver!GetHandleVerifier [0x7ff790588395+156b5]
+	msedgedriver!GetHandleVerifier [0x7ff7905756a3+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffe18eee8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffe19e4c3fc+2c]
+</status>
+</kw>
+<kw name="Close Application" owner="signup_keywords">
+<status status="NOT RUN" start="2026-05-11T16:15:36.740819" elapsed="0.000080"/>
+</kw>
+<status status="FAIL" start="2026-05-11T16:15:31.294459" elapsed="5.446841">UnexpectedAlertPresentException: Alert Text: Sign up successful.
+Message: unexpected alert open: {Alert text : Sign up successful.}
+  (Session info: MicrosoftEdge=148.0.3967.54)
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff790580f15+e235]
+	msedgedriver!GetHandleVerifier [0x7ff790580f74+e294]
+	msedgedriver!GetHandleVerifier [0x7ff7908fa65a+38797a]
+	msedgedriver!(No symbol) [0x7ff79032f5eb]
+	msedgedriver!(No symbol) [0x7ff7902ea30c]
+	msedgedriver!(No symbol) [0x7ff7902e9566]
+	msedgedriver!(No symbol) [0x7ff7902ea133]
+	msedgedriver!(No symbol) [0x7ff7903b3e49]
+	msedgedriver!(No symbol) [0x7ff7903b0413]
+	msedgedriver!(No symbol) [0x7ff7903c0672]
+	msedgedriver!GetHandleVerifier [0x7ff79059d498+2a7b8]
+	msedgedriver!GetHandleVerifier [0x7ff7905a5e86+331a6]
+	msedgedriver!GetHandleVerifier [0x7ff790588274+15594]
+	msedgedriver!GetHandleVerifier [0x7ff790588395+156b5]
+	msedgedriver!GetHandleVerifier [0x7ff7905756a3+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffe18eee8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffe19e4c3fc+2c]
+</status>
+</test>
+<status status="FAIL" start="2026-05-11T16:15:31.068271" elapsed="5.674235"/>
+</suite>
+<status status="FAIL" start="2026-05-11T16:15:31.027523" elapsed="5.715831"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
+<stat name="Signup" id="s1-s1" pass="0" fail="1" skip="0">Tests.Signup</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
