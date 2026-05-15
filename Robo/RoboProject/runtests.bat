@@ -11,7 +11,7 @@ robot ^
 --report report.html ^
 tests/
 
-echo ================================
+echo =============================== =
 echo Test Execution Completed
 echo ================================
 
